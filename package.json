@@ -5,13 +5,16 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
+    "start:amp": "node src/amp-mcp.js",
+    "start:all": "npm run start & npm run start:amp",
     "test": "jest",
     "dev": "nodemon src/index.js"
   },
   "dependencies": {
+    "@ampproject/toolbox-optimizer": "^2.10.1",
     "axios": "^1.6.0",
-    "express": "^4.18.2",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "jest": "^29.7.0",
